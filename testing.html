@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Making headers on the page -->
+<h1>Hello World</h1>
+<p>This is my first html page</p>
+<h3>This is header 3 </h3>
+<h4>This is header 4 </h4>
+<h6>My Beers </h6>
+
+
+<!-- Making lists ordered and unordered -->
+<!-- unordered -->
+<ul>
+<li class='myclass'>Bud light</il>
+<li>Corona</li>
+<li>MGD</li>
+<li>Becks</li>
+</ul>
+
+<!-- Ordered -->
+<ol>
+<li class='myclass'>Budlight</il>
+<li>Corona</li>
+<li id='badbeer'>MGD</li>
+<li id='beer'>Becks</li>
+</ol>
+
+
+<!-- Making links -->
+<a href='http://www.google.com'>This is a google link</a> 
+
+
+<!-- adding an image to the screen using url -->
+<img width='600px' height='600px' src='https://vignette.wikia.nocookie.net/deadspace/images/4/4a/Serious_cat.jpg/revision/latest?cb=20110219191322'>
+
+
+<!--  Making buttons using javascript-->
+<button onclick='myfunct()'> alert something</button>
+<button onclick='changeColor()'>change color</button>
+
+<script>
+var myfunct = function(){
+alert('Hello Out There');
+}
+
+var changeColor=function(){
+document.getElementById('beer').style.color='yellow'
+}
+</script>
+
+
+<!-- CSS changing the text -->
+<style>
+p{
+text-align:center;
+color:red;
+font-size: 24px;
+border: 2px solid aqua;
+padding:20px;
+margin: 30px;
+}
+
+h1{
+text-align:center;
+color: green;
+font-size:16px;
+}
+
+h3{
+color:blue;
+font-size:20px;
+border:4px solid black;
+}
+
+h6{
+text-align:center;
+color:blue;
+font-size:20px;
+}
+
+li{
+background-color:green;
+}
+
+#beer{
+background-color:blue;
+}
+
+#badbeer{
+background-color:yellow;
+}
+
+.myclass{
+background-color: red;
+}
+
+</style>
+
+
+
+
+
+
+</body>
+</html>
